@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [RegressionAndSmoke]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="smoke(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.thesis.tests.Login">
+        <methods>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- com.qa.thesis.tests.Login -->
+      <class name="com.qa.thesis.tests.Discount">
+        <methods>
+          <include name="DeleteDiscount2"/>
+          <include name="CreateDiscount1"/>
+        </methods>
+      </class> <!-- com.qa.thesis.tests.Discount -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+  <test thread-count="5" parallel="tests" name="regression(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.thesis.tests.Login">
+        <methods>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- com.qa.thesis.tests.Login -->
+      <class name="com.qa.thesis.tests.College">
+        <methods>
+          <include name="CreateCollege"/>
+          <include name="DeleteCollege"/>
+        </methods>
+      </class> <!-- com.qa.thesis.tests.College -->
+    </classes>
+  </test> <!-- regression(failed) -->
+</suite> <!-- Failed suite [RegressionAndSmoke] -->

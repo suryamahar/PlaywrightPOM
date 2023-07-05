@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="18" passed="5" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-05T17:56:47 IST" name="Suite" finished-at="2023-07-05T17:58:12 IST" duration-ms="85489">
+    <groups>
+      <group name="regression">
+        <method signature="Login.validLogin()[pri:0, instance:com.qa.thesis.tests.Login@fe34b86]" name="validLogin" class="com.qa.thesis.tests.Login"/>
+        <method signature="HighSchool.CreateHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@4afbb6c2]" name="CreateHighSchool" class="com.qa.thesis.tests.HighSchool"/>
+        <method signature="HighSchool.DeleteHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@4afbb6c2]" name="DeleteHighSchool" class="com.qa.thesis.tests.HighSchool"/>
+        <method signature="College.CreateCollege()[pri:0, instance:com.qa.thesis.tests.College@5399f6c5]" name="CreateCollege" class="com.qa.thesis.tests.College"/>
+        <method signature="College.DeleteCollege()[pri:0, instance:com.qa.thesis.tests.College@5399f6c5]" name="DeleteCollege" class="com.qa.thesis.tests.College"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Discount.CreateDiscount1()[pri:0, instance:com.qa.thesis.tests.Discount@7f5b9db]" name="CreateDiscount1" class="com.qa.thesis.tests.Discount"/>
+        <method signature="Discount.DeleteDiscount2()[pri:0, instance:com.qa.thesis.tests.Discount@7f5b9db]" name="DeleteDiscount2" class="com.qa.thesis.tests.Discount"/>
+        <method signature="Login.invalidLogin()[pri:0, instance:com.qa.thesis.tests.Login@fe34b86]" name="invalidLogin" class="com.qa.thesis.tests.Login"/>
+        <method signature="DiscountPlan.CreateDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@2f521c4]" name="CreateDiscountPlan" class="com.qa.thesis.tests.DiscountPlan"/>
+        <method signature="DiscountPlan.DeleteDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@2f521c4]" name="DeleteDiscountPlan" class="com.qa.thesis.tests.DiscountPlan"/>
+        <method signature="HoldType.CreateHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@35a0e495]" name="CreateHoldType" class="com.qa.thesis.tests.HoldType"/>
+        <method signature="HoldType.DeletHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@35a0e495]" name="DeletHoldType" class="com.qa.thesis.tests.HoldType"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-07-05T17:56:47 IST" name="Test" finished-at="2023-07-05T17:57:12 IST" duration-ms="24862">
+      <class name="com.qa.thesis.tests.Login">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.Login@fe34b86]" started-at="2023-07-05T17:56:47 IST" name="setup" finished-at="2023-07-05T17:57:09 IST" duration-ms="21481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://sm-qa-c26.thesiscloud-lab.com/U4SM/Account/Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogin()[pri:0, instance:com.qa.thesis.tests.Login@fe34b86]" started-at="2023-07-05T17:57:09 IST" name="invalidLogin" finished-at="2023-07-05T17:57:09 IST" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="validLogin()[pri:0, instance:com.qa.thesis.tests.Login@fe34b86]" started-at="2023-07-05T17:57:10 IST" name="validLogin" finished-at="2023-07-05T17:57:11 IST" duration-ms="1200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.Login@fe34b86]" started-at="2023-07-05T17:57:11 IST" name="teardown" finished-at="2023-07-05T17:57:12 IST" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.Login -->
+      <class name="com.qa.thesis.tests.Discount">
+        <test-method signature="CreateDiscount1()[pri:0, instance:com.qa.thesis.tests.Discount@7f5b9db]" started-at="2023-07-05T17:57:11 IST" name="CreateDiscount1" finished-at="2023-07-05T17:57:11 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null
+at com.qa.thesis.tests.Discount.CreateDiscount1(Discount.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDiscount1 -->
+        <test-method signature="DeleteDiscount2()[pri:0, instance:com.qa.thesis.tests.Discount@7f5b9db]" started-at="2023-07-05T17:57:11 IST" name="DeleteDiscount2" finished-at="2023-07-05T17:57:11 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null
+at com.qa.thesis.tests.Discount.DeleteDiscount2(Discount.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDiscount2 -->
+      </class> <!-- com.qa.thesis.tests.Discount -->
+    </test> <!-- Test -->
+    <test started-at="2023-07-05T17:56:47 IST" name="Test2" finished-at="2023-07-05T17:57:38 IST" duration-ms="50797">
+      <class name="com.qa.thesis.tests.DiscountPlan">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.DiscountPlan@2f521c4]" started-at="2023-07-05T17:56:47 IST" name="setup" finished-at="2023-07-05T17:57:08 IST" duration-ms="20916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://sm-qa-c26.thesiscloud-lab.com/U4SM/Account/Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CreateDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@2f521c4]" started-at="2023-07-05T17:57:08 IST" name="CreateDiscountPlan" finished-at="2023-07-05T17:57:26 IST" duration-ms="17815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDiscountPlan -->
+        <test-method signature="DeleteDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@2f521c4]" started-at="2023-07-05T17:57:26 IST" name="DeleteDiscountPlan" finished-at="2023-07-05T17:57:37 IST" duration-ms="11243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDiscountPlan -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@2f521c4]" started-at="2023-07-05T17:57:37 IST" name="teardown" finished-at="2023-07-05T17:57:38 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.DiscountPlan -->
+      <class name="com.qa.thesis.tests.HighSchool">
+        <test-method signature="CreateHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@4afbb6c2]" started-at="2023-07-05T17:57:37 IST" name="CreateHighSchool" finished-at="2023-07-05T17:57:37 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null
+at com.qa.thesis.tests.HighSchool.CreateHighSchool(HighSchool.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateHighSchool -->
+        <test-method signature="DeleteHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@4afbb6c2]" started-at="2023-07-05T17:57:37 IST" name="DeleteHighSchool" finished-at="2023-07-05T17:57:37 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null
+at com.qa.thesis.tests.HighSchool.DeleteHighSchool(HighSchool.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteHighSchool -->
+      </class> <!-- com.qa.thesis.tests.HighSchool -->
+    </test> <!-- Test2 -->
+    <test started-at="2023-07-05T17:56:47 IST" name="Test3" finished-at="2023-07-05T17:58:12 IST" duration-ms="85489">
+      <class name="com.qa.thesis.tests.College">
+        <test-method signature="CreateCollege()[pri:0, instance:com.qa.thesis.tests.College@5399f6c5]" started-at="2023-07-05T17:58:11 IST" name="CreateCollege" finished-at="2023-07-05T17:58:11 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null
+at com.qa.thesis.tests.College.CreateCollege(College.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCollege -->
+        <test-method signature="DeleteCollege()[pri:0, instance:com.qa.thesis.tests.College@5399f6c5]" started-at="2023-07-05T17:58:11 IST" name="DeleteCollege" finished-at="2023-07-05T17:58:11 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.thesis.pages.LoginPage.LoginToAdmin(String, String)" because "this.loginpage" is null
+at com.qa.thesis.tests.College.DeleteCollege(College.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteCollege -->
+      </class> <!-- com.qa.thesis.tests.College -->
+      <class name="com.qa.thesis.tests.HoldType">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.HoldType@35a0e495]" started-at="2023-07-05T17:56:47 IST" name="setup" finished-at="2023-07-05T17:57:15 IST" duration-ms="28435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://sm-qa-c26.thesiscloud-lab.com/U4SM/Account/Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CreateHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@35a0e495]" started-at="2023-07-05T17:57:15 IST" name="CreateHoldType" finished-at="2023-07-05T17:57:33 IST" duration-ms="17563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateHoldType -->
+        <test-method signature="DeletHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@35a0e495]" started-at="2023-07-05T17:57:33 IST" name="DeletHoldType" finished-at="2023-07-05T17:58:11 IST" duration-ms="37678" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//td//span[text()=toto]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//td//span[text()=toto]")
+============================================================
+    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\frames.js:999:23)
+    at FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\dispatchers\frameDispatcher.js:149:30)
+    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\dispatchers\dispatcher.js:312:46)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//td//span[text()=toto]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//td//span[text()=toto]")
+============================================================
+    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\frames.js:999:23)
+    at FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\dispatchers\frameDispatcher.js:149:30)
+    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:132)
+at com.microsoft.playwright.Locator.click(Locator.java:2268)
+at com.qa.thesis.pages.LoginPage.DeleteHoldType(LoginPage.java:105)
+at com.qa.thesis.tests.HoldType.DeletHoldType(HoldType.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//td//span[text()=toto]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//td//span[text()=toto]")
+============================================================
+    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\frames.js:999:23)
+    at FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\dispatchers\frameDispatcher.js:149:30)
+    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-15256070854838382768\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletHoldType -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.HoldType@35a0e495]" started-at="2023-07-05T17:58:11 IST" name="teardown" finished-at="2023-07-05T17:58:12 IST" duration-ms="1732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.HoldType -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>
