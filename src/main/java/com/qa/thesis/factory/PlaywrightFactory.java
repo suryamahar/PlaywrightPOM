@@ -40,7 +40,7 @@ public class PlaywrightFactory {
 		return tlBrowserContext.get();
 	}
 
-	public Page initBrowser(String browserName, String url) {
+	public static Page initBrowser(String browserName, String url) {
 		System.out.println("Broser name is" + browserName);
 
 		tlPlaywright.set(Playwright.create());

@@ -1,6 +1,7 @@
 package com.qa.thesis.base;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -19,19 +20,26 @@ public class BaseTest {
 	Page page;
 	public LoginPage loginpage;
 	
-	@BeforeTest
+	@BeforeTest(groups = {"smoke","regression"})
 	@Parameters({"browser","url"})
-	public void setup(String browser,String url) {
-		
-		pf=new PlaywrightFactory();
-		page=pf.initBrowser(browser,url);
-		
-		loginpage=new LoginPage(page);
+	public  void setup(String browser,String url) {
+		      
+		PlaywrightFactory.initBrowser(browser, url);
+		loginpage=new LoginPage(PlaywrightFactory.getPage());	
+
 	}
-	@AfterTest
+	
+	@AfterMethod(groups = {"smoke","regression"})
+	public void Logout() {
+		
+		loginpage.Logout();
+		
+	}
+	
+	@AfterTest(groups = "smoke")
 	public void teardown() {
 		
-		page.context().browser().close();
+		PlaywrightFactory.getPage().context().browser().close();
 	}
 
 }

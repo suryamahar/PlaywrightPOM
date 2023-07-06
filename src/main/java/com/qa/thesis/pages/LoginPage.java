@@ -3,6 +3,7 @@ package com.qa.thesis.pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import com.qa.thesis.factory.PlaywrightFactory;
 
 
 public class LoginPage {
@@ -102,7 +103,7 @@ public class LoginPage {
 	{
 	      page.locator("#KeywordSearch").fill(holdType);
 	      page.locator("#KeywordSearch").press("Enter");
-	      page.locator("//td//span[text()="+holdType+"]").click();
+	      page.locator("(//td//span[text()='"+holdType+"'])[1]").click();
 	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete")).click();
 	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("OK")).click();
 	      return this;

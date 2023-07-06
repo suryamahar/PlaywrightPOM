@@ -3,27 +3,30 @@
 <suite name="Suite" parallel="tests" thread-count="3">
   <test  name="Test" >
 	  <parameter name="browser" value="Chromium"></parameter>
-	  <parameter name="url" value="https://sm-qa-c26.thesiscloud-lab.com/U4SM/Account/Login"></parameter>
+	  <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>
-    <class name="com.qa.thesis.tests.Login"/>
+    <class name="com.qa.thesis.tests.College"/>
     <class name="com.qa.thesis.tests.Discount"/>
     </classes>
      </test> 
-        <test  name="Test2" >
+  
+    <test  name="Test2" >
 	  <parameter name="browser" value="Chromium"></parameter>
-	  <parameter name="url" value="https://sm-qa-c26.thesiscloud-lab.com/U4SM/Account/Login"></parameter>
+	  <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>
     <class name="com.qa.thesis.tests.DiscountPlan"/>
     <class name="com.qa.thesis.tests.HighSchool"/>
     </classes>
-     </test>   <test  name="Test3" >
-	  <parameter name="browser" value="firefox"></parameter>
-	  <parameter name="url" value="https://sm-qa-c26.thesiscloud-lab.com/U4SM/Account/Login"></parameter>
+     </test>   
+     
+       <test  name="Test3" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>
     <class name="com.qa.thesis.tests.HoldType"/>
     <class name="com.qa.thesis.tests.College"/>
     </classes>
     
      </test> 
-<!--   Test -->
+  <!--   Test -->
 </suite> <!-- Suite -->
