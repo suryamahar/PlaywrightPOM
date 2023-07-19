@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="22" total="32" passed="9" failed="1" skipped="0">
+<testng-results ignored="25" total="36" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-06T20:42:03 IST" name="RegressionAndSmoke" finished-at="2023-07-06T20:43:20 IST" duration-ms="77534">
+  <suite started-at="2023-07-19T09:32:36 IST" name="RegressionAndSmoke" finished-at="2023-07-19T09:34:11 IST" duration-ms="95030">
     <groups>
       <group name="regression">
-        <method signature="College.CreateCollege()[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" name="CreateCollege" class="com.qa.thesis.tests.College"/>
-        <method signature="College.DeleteCollege()[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" name="DeleteCollege" class="com.qa.thesis.tests.College"/>
-        <method signature="HighSchool.CreateHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@35645047]" name="CreateHighSchool" class="com.qa.thesis.tests.HighSchool"/>
-        <method signature="HighSchool.DeleteHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@35645047]" name="DeleteHighSchool" class="com.qa.thesis.tests.HighSchool"/>
+        <method signature="College.CreateCollege()[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" name="CreateCollege" class="com.qa.thesis.tests.College"/>
+        <method signature="College.DeleteCollege()[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" name="DeleteCollege" class="com.qa.thesis.tests.College"/>
+        <method signature="HighSchool.CreateHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@5ddcc487]" name="CreateHighSchool" class="com.qa.thesis.tests.HighSchool"/>
+        <method signature="HighSchool.DeleteHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@5ddcc487]" name="DeleteHighSchool" class="com.qa.thesis.tests.HighSchool"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="Discount.CreateDiscount1()[pri:0, instance:com.qa.thesis.tests.Discount@15713d56]" name="CreateDiscount1" class="com.qa.thesis.tests.Discount"/>
-        <method signature="Discount.DeleteDiscount2()[pri:0, instance:com.qa.thesis.tests.Discount@15713d56]" name="DeleteDiscount2" class="com.qa.thesis.tests.Discount"/>
-        <method signature="DiscountPlan.CreateDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@6cc558c6]" name="CreateDiscountPlan" class="com.qa.thesis.tests.DiscountPlan"/>
-        <method signature="DiscountPlan.DeleteDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@6cc558c6]" name="DeleteDiscountPlan" class="com.qa.thesis.tests.DiscountPlan"/>
-        <method signature="HoldType.CreateHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@26ceffa8]" name="CreateHoldType" class="com.qa.thesis.tests.HoldType"/>
-        <method signature="HoldType.DeletHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@26ceffa8]" name="DeletHoldType" class="com.qa.thesis.tests.HoldType"/>
+        <method signature="Discount.CreateDiscount1()[pri:0, instance:com.qa.thesis.tests.Discount@14fc1f0]" name="CreateDiscount1" class="com.qa.thesis.tests.Discount"/>
+        <method signature="Discount.DeleteDiscount2()[pri:0, instance:com.qa.thesis.tests.Discount@14fc1f0]" name="DeleteDiscount2" class="com.qa.thesis.tests.Discount"/>
+        <method signature="DiscountPlan.CreateDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@4ae9cfc1]" name="CreateDiscountPlan" class="com.qa.thesis.tests.DiscountPlan"/>
+        <method signature="DiscountPlan.DeleteDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@4ae9cfc1]" name="DeleteDiscountPlan" class="com.qa.thesis.tests.DiscountPlan"/>
+        <method signature="HoldType.CreateHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@632ceb35]" name="CreateHoldType" class="com.qa.thesis.tests.HoldType"/>
+        <method signature="HoldType.DeletHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@632ceb35]" name="DeletHoldType" class="com.qa.thesis.tests.HoldType"/>
+        <method signature="Login.invalidLogin()[pri:0, instance:com.qa.thesis.tests.Login@1c93f6e1]" name="invalidLogin" class="com.qa.thesis.tests.Login"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-07-06T20:42:03 IST" name="regression" finished-at="2023-07-06T20:43:12 IST" duration-ms="69232">
+    <test started-at="2023-07-19T09:32:36 IST" name="regression" finished-at="2023-07-19T09:33:36 IST" duration-ms="60010">
       <class name="com.qa.thesis.tests.College">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" started-at="2023-07-06T20:42:03 IST" name="setup" finished-at="2023-07-06T20:42:13 IST" duration-ms="10540" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" started-at="2023-07-19T09:32:36 IST" name="setup" finished-at="2023-07-19T09:32:51 IST" duration-ms="15077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,88 +38,274 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="CreateCollege()[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" started-at="2023-07-06T20:42:13 IST" name="CreateCollege" finished-at="2023-07-06T20:42:37 IST" duration-ms="23974" status="PASS">
+        <test-method signature="CreateCollege()[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" started-at="2023-07-19T09:32:51 IST" name="CreateCollege" finished-at="2023-07-19T09:33:05 IST" duration-ms="14008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateCollege -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" started-at="2023-07-06T20:42:37 IST" name="Logout" finished-at="2023-07-06T20:42:42 IST" duration-ms="4864" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" started-at="2023-07-19T09:33:05 IST" name="Logout" finished-at="2023-07-19T09:33:10 IST" duration-ms="4869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method signature="DeleteCollege()[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" started-at="2023-07-06T20:42:42 IST" name="DeleteCollege" finished-at="2023-07-06T20:42:53 IST" duration-ms="11003" status="PASS">
+        <test-method signature="DeleteCollege()[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" started-at="2023-07-19T09:33:10 IST" name="DeleteCollege" finished-at="2023-07-19T09:33:18 IST" duration-ms="7530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteCollege -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.College@3f57bcad]" started-at="2023-07-06T20:42:53 IST" name="Logout" finished-at="2023-07-06T20:42:56 IST" duration-ms="2841" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.College@36a5cabc]" started-at="2023-07-19T09:33:18 IST" name="Logout" finished-at="2023-07-19T09:33:20 IST" duration-ms="2559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
       </class> <!-- com.qa.thesis.tests.College -->
       <class name="com.qa.thesis.tests.HighSchool">
-        <test-method signature="CreateHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@35645047]" started-at="2023-07-06T20:42:56 IST" name="CreateHighSchool" finished-at="2023-07-06T20:43:04 IST" duration-ms="8122" status="PASS">
+        <test-method signature="CreateHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@5ddcc487]" started-at="2023-07-19T09:33:20 IST" name="CreateHighSchool" finished-at="2023-07-19T09:33:26 IST" duration-ms="5830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateHighSchool -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HighSchool@35645047]" started-at="2023-07-06T20:43:04 IST" name="Logout" finished-at="2023-07-06T20:43:07 IST" duration-ms="2846" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HighSchool@5ddcc487]" started-at="2023-07-19T09:33:26 IST" name="Logout" finished-at="2023-07-19T09:33:29 IST" duration-ms="2991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method signature="DeleteHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@35645047]" started-at="2023-07-06T20:43:07 IST" name="DeleteHighSchool" finished-at="2023-07-06T20:43:11 IST" duration-ms="3650" status="FAIL">
+        <test-method signature="DeleteHighSchool()[pri:0, instance:com.qa.thesis.tests.HighSchool@5ddcc487]" started-at="2023-07-19T09:33:29 IST" name="DeleteHighSchool" finished-at="2023-07-19T09:33:34 IST" duration-ms="4459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteHighSchool -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HighSchool@5ddcc487]" started-at="2023-07-19T09:33:34 IST" name="Logout" finished-at="2023-07-19T09:33:36 IST" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- com.qa.thesis.tests.HighSchool -->
+    </test> <!-- regression -->
+    <test started-at="2023-07-19T09:32:36 IST" name="smoke" finished-at="2023-07-19T09:34:11 IST" duration-ms="95029">
+      <class name="com.qa.thesis.tests.Login">
+        <test-method signature="invalidLogin()[pri:0, instance:com.qa.thesis.tests.Login@1c93f6e1]" started-at="2023-07-19T09:33:40 IST" name="invalidLogin" finished-at="2023-07-19T09:33:41 IST" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.Login@1c93f6e1]" started-at="2023-07-19T09:33:41 IST" name="Logout" finished-at="2023-07-19T09:34:11 IST" duration-ms="30001" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Profile Menu"))
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Profile Menu"))
+============================================================
+    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:999:23)
+    at FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:30)
+    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:46)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Profile Menu"))
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Profile Menu"))
+============================================================
+    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:999:23)
+    at FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:30)
+    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:132)
+at com.microsoft.playwright.Locator.click(Locator.java:2268)
+at com.qa.thesis.pages.LoginPage.Logout(LoginPage.java:122)
+at com.qa.thesis.base.BaseTest.Logout(BaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Profile Menu"))
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Profile Menu"))
+============================================================
+    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:999:23)
+    at FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:30)
+    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 40 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- com.qa.thesis.tests.Login -->
+      <class name="com.qa.thesis.tests.College">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.College@5a2d131d]" started-at="2023-07-19T09:32:36 IST" name="setup" finished-at="2023-07-19T09:32:51 IST" duration-ms="15172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.College@5a2d131d]" started-at="2023-07-19T09:34:11 IST" name="teardown" finished-at="2023-07-19T09:34:11 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.College -->
+      <class name="com.qa.thesis.tests.DiscountPlan">
+        <test-method signature="CreateDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@4ae9cfc1]" started-at="2023-07-19T09:33:12 IST" name="CreateDiscountPlan" finished-at="2023-07-19T09:33:17 IST" duration-ms="5188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDiscountPlan -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@4ae9cfc1]" started-at="2023-07-19T09:33:17 IST" name="Logout" finished-at="2023-07-19T09:33:20 IST" duration-ms="2100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="DeleteDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@4ae9cfc1]" started-at="2023-07-19T09:33:20 IST" name="DeleteDiscountPlan" finished-at="2023-07-19T09:33:23 IST" duration-ms="3889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDiscountPlan -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@4ae9cfc1]" started-at="2023-07-19T09:33:23 IST" name="Logout" finished-at="2023-07-19T09:33:26 IST" duration-ms="2591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- com.qa.thesis.tests.DiscountPlan -->
+      <class name="com.qa.thesis.tests.HoldType">
+        <test-method signature="CreateHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@632ceb35]" started-at="2023-07-19T09:33:26 IST" name="CreateHoldType" finished-at="2023-07-19T09:33:31 IST" duration-ms="5353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateHoldType -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HoldType@632ceb35]" started-at="2023-07-19T09:33:31 IST" name="Logout" finished-at="2023-07-19T09:33:34 IST" duration-ms="2504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="DeletHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@632ceb35]" started-at="2023-07-19T09:33:34 IST" name="DeletHoldType" finished-at="2023-07-19T09:33:38 IST" duration-ms="4030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletHoldType -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HoldType@632ceb35]" started-at="2023-07-19T09:33:38 IST" name="Logout" finished-at="2023-07-19T09:33:40 IST" duration-ms="2386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- com.qa.thesis.tests.HoldType -->
+      <class name="com.qa.thesis.tests.Discount">
+        <test-method signature="CreateDiscount1()[pri:0, instance:com.qa.thesis.tests.Discount@14fc1f0]" started-at="2023-07-19T09:32:51 IST" name="CreateDiscount1" finished-at="2023-07-19T09:33:05 IST" duration-ms="13105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDiscount1 -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.Discount@14fc1f0]" started-at="2023-07-19T09:33:05 IST" name="Logout" finished-at="2023-07-19T09:33:07 IST" duration-ms="2804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="DeleteDiscount2()[pri:0, instance:com.qa.thesis.tests.Discount@14fc1f0]" started-at="2023-07-19T09:33:07 IST" name="DeleteDiscount2" finished-at="2023-07-19T09:33:11 IST" duration-ms="3145" status="FAIL">
           <exception class="com.microsoft.playwright.PlaywrightException">
             <message>
               <![CDATA[Error {
-  message='Error: strict mode violation: locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1")) resolved to 2 elements:
-    1) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").first()
-    2) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").nth(1)
+  message='Error: strict mode violation: getByText("Discount1") resolved to 2 elements:
+    1) <span>Discount1</span> aka getByText("Discount1", new Page.GetByTextOptions().setExact(true))
+    2) <span>Discount10</span> aka getByText("Discount10")
 
 =========================== logs ===========================
-waiting for locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1"))
+waiting for getByText("Discount1")
 ============================================================
   name='Error
-  stack='Error: Error: strict mode violation: locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1")) resolved to 2 elements:
-    1) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").first()
-    2) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").nth(1)
+  stack='Error: Error: strict mode violation: getByText("Discount1") resolved to 2 elements:
+    1) <span>Discount1</span> aka getByText("Discount1", new Page.GetByTextOptions().setExact(true))
+    2) <span>Discount10</span> aka getByText("Discount10")
 
 =========================== logs ===========================
-waiting for locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1"))
+waiting for getByText("Discount1")
 ============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\utils\manualPromise.js:80:14)
-    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\javascript.js:234:12)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:945:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:916:24)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:1000:29
-    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\frameDispatcher.js:149:12)
-    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\dispatcher.js:312:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\utils\manualPromise.js:80:14)
+    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\javascript.js:234:12)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:945:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:916:24)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:1000:29
+    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:12)
+    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:22)
 }]]>
             </message>
             <full-stacktrace>
               <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Error: strict mode violation: locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1")) resolved to 2 elements:
-    1) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").first()
-    2) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").nth(1)
+  message='Error: strict mode violation: getByText("Discount1") resolved to 2 elements:
+    1) <span>Discount1</span> aka getByText("Discount1", new Page.GetByTextOptions().setExact(true))
+    2) <span>Discount10</span> aka getByText("Discount10")
 
 =========================== logs ===========================
-waiting for locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1"))
+waiting for getByText("Discount1")
 ============================================================
   name='Error
-  stack='Error: Error: strict mode violation: locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1")) resolved to 2 elements:
-    1) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").first()
-    2) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").nth(1)
+  stack='Error: Error: strict mode violation: getByText("Discount1") resolved to 2 elements:
+    1) <span>Discount1</span> aka getByText("Discount1", new Page.GetByTextOptions().setExact(true))
+    2) <span>Discount10</span> aka getByText("Discount10")
 
 =========================== logs ===========================
-waiting for locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1"))
+waiting for getByText("Discount1")
 ============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\utils\manualPromise.js:80:14)
-    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\javascript.js:234:12)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:945:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:916:24)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:1000:29
-    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\frameDispatcher.js:149:12)
-    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\dispatcher.js:312:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\utils\manualPromise.js:80:14)
+    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\javascript.js:234:12)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:945:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:916:24)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:1000:29
+    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:12)
+    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:22)
 }
 at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
@@ -133,8 +320,8 @@ at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:
 at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
 at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:132)
 at com.microsoft.playwright.Locator.click(Locator.java:2268)
-at com.qa.thesis.pages.LoginPage.DeleteHighSchool(LoginPage.java:171)
-at com.qa.thesis.tests.HighSchool.DeleteHighSchool(HighSchool.java:25)
+at com.qa.thesis.pages.LoginPage.DeleteDiscount(LoginPage.java:97)
+at com.qa.thesis.tests.Discount.DeleteDiscount2(Discount.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,30 +345,30 @@ at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecuto
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Error: strict mode violation: locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1")) resolved to 2 elements:
-    1) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").first()
-    2) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").nth(1)
+  message='Error: strict mode violation: getByText("Discount1") resolved to 2 elements:
+    1) <span>Discount1</span> aka getByText("Discount1", new Page.GetByTextOptions().setExact(true))
+    2) <span>Discount10</span> aka getByText("Discount10")
 
 =========================== logs ===========================
-waiting for locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1"))
+waiting for getByText("Discount1")
 ============================================================
   name='Error
-  stack='Error: Error: strict mode violation: locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1")) resolved to 2 elements:
-    1) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").first()
-    2) <div class="marqueeColumn">…</div> aka getByText("HighSchool1 High School Code").nth(1)
+  stack='Error: Error: strict mode violation: getByText("Discount1") resolved to 2 elements:
+    1) <span>Discount1</span> aka getByText("Discount1", new Page.GetByTextOptions().setExact(true))
+    2) <span>Discount10</span> aka getByText("Discount10")
 
 =========================== logs ===========================
-waiting for locator("#searchResults div").filter(new Locator.FilterOptions().setHasText("HighSchool1"))
+waiting for getByText("Discount1")
 ============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\utils\manualPromise.js:80:14)
-    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\javascript.js:234:12)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:945:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:916:24)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:1000:29
-    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\frameDispatcher.js:149:12)
-    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\dispatcher.js:312:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\utils\manualPromise.js:80:14)
+    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\javascript.js:234:12)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:945:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:916:24)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:1000:29
+    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:12)
+    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:22)
 }
 at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
 at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
@@ -192,86 +379,8 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
           </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteHighSchool -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HighSchool@35645047]" started-at="2023-07-06T20:43:11 IST" name="Logout" finished-at="2023-07-06T20:43:12 IST" duration-ms="1326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- com.qa.thesis.tests.HighSchool -->
-    </test> <!-- regression -->
-    <test started-at="2023-07-06T20:42:03 IST" name="smoke" finished-at="2023-07-06T20:43:20 IST" duration-ms="77534">
-      <class name="com.qa.thesis.tests.College">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.College@7a67e3c6]" started-at="2023-07-06T20:42:03 IST" name="setup" finished-at="2023-07-06T20:42:13 IST" duration-ms="10215" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chromium]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.College@7a67e3c6]" started-at="2023-07-06T20:43:20 IST" name="teardown" finished-at="2023-07-06T20:43:20 IST" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.thesis.tests.College -->
-      <class name="com.qa.thesis.tests.DiscountPlan">
-        <test-method signature="CreateDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@6cc558c6]" started-at="2023-07-06T20:42:13 IST" name="CreateDiscountPlan" finished-at="2023-07-06T20:42:23 IST" duration-ms="10085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateDiscountPlan -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@6cc558c6]" started-at="2023-07-06T20:42:23 IST" name="Logout" finished-at="2023-07-06T20:42:25 IST" duration-ms="1847" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method signature="DeleteDiscountPlan()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@6cc558c6]" started-at="2023-07-06T20:42:25 IST" name="DeleteDiscountPlan" finished-at="2023-07-06T20:42:38 IST" duration-ms="12691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteDiscountPlan -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.DiscountPlan@6cc558c6]" started-at="2023-07-06T20:42:38 IST" name="Logout" finished-at="2023-07-06T20:42:41 IST" duration-ms="2723" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- com.qa.thesis.tests.DiscountPlan -->
-      <class name="com.qa.thesis.tests.HoldType">
-        <test-method signature="CreateHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@26ceffa8]" started-at="2023-07-06T20:43:00 IST" name="CreateHoldType" finished-at="2023-07-06T20:43:09 IST" duration-ms="9034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateHoldType -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HoldType@26ceffa8]" started-at="2023-07-06T20:43:09 IST" name="Logout" finished-at="2023-07-06T20:43:12 IST" duration-ms="2305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method signature="DeletHoldType()[pri:0, instance:com.qa.thesis.tests.HoldType@26ceffa8]" started-at="2023-07-06T20:43:12 IST" name="DeletHoldType" finished-at="2023-07-06T20:43:18 IST" duration-ms="6932" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeletHoldType -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.HoldType@26ceffa8]" started-at="2023-07-06T20:43:18 IST" name="Logout" finished-at="2023-07-06T20:43:20 IST" duration-ms="1691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- com.qa.thesis.tests.HoldType -->
-      <class name="com.qa.thesis.tests.Discount">
-        <test-method signature="CreateDiscount1()[pri:0, instance:com.qa.thesis.tests.Discount@15713d56]" started-at="2023-07-06T20:42:41 IST" name="CreateDiscount1" finished-at="2023-07-06T20:42:46 IST" duration-ms="5876" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateDiscount1 -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.Discount@15713d56]" started-at="2023-07-06T20:42:46 IST" name="Logout" finished-at="2023-07-06T20:42:49 IST" duration-ms="2363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method signature="DeleteDiscount2()[pri:0, instance:com.qa.thesis.tests.Discount@15713d56]" started-at="2023-07-06T20:42:49 IST" name="DeleteDiscount2" finished-at="2023-07-06T20:42:58 IST" duration-ms="8932" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- DeleteDiscount2 -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.Discount@15713d56]" started-at="2023-07-06T20:42:58 IST" name="Logout" finished-at="2023-07-06T20:43:00 IST" duration-ms="2386" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.Discount@14fc1f0]" started-at="2023-07-19T09:33:11 IST" name="Logout" finished-at="2023-07-19T09:33:12 IST" duration-ms="1541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->

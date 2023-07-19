@@ -15,7 +15,7 @@ public class Discount extends BaseTest{
 		loginpage.LoginToAdmin("cams-mgr","passW0rd!");
 		loginpage.clickAgree();
 		loginpage.NavigateToDiscount();
-		loginpage.AddDiscount("Discount1");
+		loginpage.AddDiscount("Discount111");
 	}
 	@Test(groups = "smoke")
 	public void DeleteDiscount2() {
@@ -23,7 +23,7 @@ public class Discount extends BaseTest{
 		loginpage.LoginToAdmin("cams-mgr","passW0rd!");
 		loginpage.clickAgree();
 		loginpage.NavigateToDiscount();
-		loginpage.DeleteDiscount("Discount1");
+		loginpage.DeleteDiscount("Discount111");
 
 	}
 

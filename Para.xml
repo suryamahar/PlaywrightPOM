@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="com.qa.thesis.factory.U4smListerners"></listener>
+	</listeners>
   <test  name="Test" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>
     <class name="com.qa.thesis.tests.College"/>
-    <class name="com.qa.thesis.tests.Discount"/>
+     <class name="com.qa.thesis.tests.Discount"/>
     </classes>
      </test> 
-  
+    
     <test  name="Test2" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>

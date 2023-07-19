@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-RegressionAndSmoke">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.HighSchool" class="method navigator-link" hash-for-method="DeleteHighSchool">DeleteHighSchool</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.Discount" class="method navigator-link" hash-for-method="DeleteDiscount2">DeleteDiscount2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-RegressionAndSmoke -->
@@ -152,12 +152,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.Discount" class="method navigator-link" hash-for-method="DeleteDiscount2">DeleteDiscount2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.DiscountPlan" class="method navigator-link" hash-for-method="DeleteDiscountPlan">DeleteDiscountPlan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.DiscountPlan" class="method navigator-link" hash-for-method="DeleteDiscountPlan">DeleteDiscountPlan</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.HighSchool" class="method navigator-link" hash-for-method="DeleteHighSchool">DeleteHighSchool</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionAndSmoke" title="com.qa.thesis.tests.Login" class="method navigator-link" hash-for-method="invalidLogin">invalidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RegressionAndSmoke -->
@@ -175,39 +180,39 @@
           <div class="suite-RegressionAndSmoke-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.thesis.tests.HighSchool</span>
+              <span class="class-name">com.qa.thesis.tests.Discount</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteHighSchool">
-                  </a> <!-- DeleteHighSchool -->
-                  <span class="method-name">DeleteHighSchool</span>
+                  <a name="DeleteDiscount2">
+                  </a> <!-- DeleteDiscount2 -->
+                  <span class="method-name">DeleteDiscount2</span>
                   <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;)) resolved to 2 elements:
-    1) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).first()
-    2) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).nth(1)
+  message=&apos;Error: strict mode violation: getByText(&quot;Discount1&quot;) resolved to 2 elements:
+    1) &lt;span&gt;Discount1&lt;/span&gt; aka getByText(&quot;Discount1&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;span&gt;Discount10&lt;/span&gt; aka getByText(&quot;Discount10&quot;)
 
 =========================== logs ===========================
-waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;))
+waiting for getByText(&quot;Discount1&quot;)
 ============================================================
   name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;)) resolved to 2 elements:
-    1) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).first()
-    2) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).nth(1)
+  stack=&apos;Error: Error: strict mode violation: getByText(&quot;Discount1&quot;) resolved to 2 elements:
+    1) &lt;span&gt;Discount1&lt;/span&gt; aka getByText(&quot;Discount1&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;span&gt;Discount10&lt;/span&gt; aka getByText(&quot;Discount10&quot;)
 
 =========================== logs ===========================
-waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;))
+waiting for getByText(&quot;Discount1&quot;)
 ============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\utils\manualPromise.js:80:14)
-    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\javascript.js:234:12)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:945:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:916:24)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:1000:29
-    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\frameDispatcher.js:149:12)
-    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\dispatcher.js:312:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\utils\manualPromise.js:80:14)
+    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\javascript.js:234:12)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:945:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:916:24)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:1000:29
+    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:12)
+    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:22)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
@@ -222,38 +227,38 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
 	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
 	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:132)
 	at com.microsoft.playwright.Locator.click(Locator.java:2268)
-	at com.qa.thesis.pages.LoginPage.DeleteHighSchool(LoginPage.java:171)
-	at com.qa.thesis.tests.HighSchool.DeleteHighSchool(HighSchool.java:25)
+	at com.qa.thesis.pages.LoginPage.DeleteDiscount(LoginPage.java:97)
+	at com.qa.thesis.tests.Discount.DeleteDiscount2(Discount.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;)) resolved to 2 elements:
-    1) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).first()
-    2) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).nth(1)
+  message=&apos;Error: strict mode violation: getByText(&quot;Discount1&quot;) resolved to 2 elements:
+    1) &lt;span&gt;Discount1&lt;/span&gt; aka getByText(&quot;Discount1&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;span&gt;Discount10&lt;/span&gt; aka getByText(&quot;Discount10&quot;)
 
 =========================== logs ===========================
-waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;))
+waiting for getByText(&quot;Discount1&quot;)
 ============================================================
   name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;)) resolved to 2 elements:
-    1) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).first()
-    2) &lt;div class=&quot;marqueeColumn&quot;&gt;…&lt;/div&gt; aka getByText(&quot;HighSchool1 High School Code&quot;).nth(1)
+  stack=&apos;Error: Error: strict mode violation: getByText(&quot;Discount1&quot;) resolved to 2 elements:
+    1) &lt;span&gt;Discount1&lt;/span&gt; aka getByText(&quot;Discount1&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;span&gt;Discount10&lt;/span&gt; aka getByText(&quot;Discount10&quot;)
 
 =========================== logs ===========================
-waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOptions().setHasText(&quot;HighSchool1&quot;))
+waiting for getByText(&quot;Discount1&quot;)
 ============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\utils\manualPromise.js:80:14)
-    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\javascript.js:234:12)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:945:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:916:24)
-    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\frames.js:1000:29
-    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\frameDispatcher.js:149:12)
-    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-12552095701624826904\package\lib\server\dispatchers\dispatcher.js:312:22)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async ScopedRace._race (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\utils\manualPromise.js:80:14)
+    at async evaluateExpression (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\javascript.js:234:12)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:945:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:916:24)
+    at async C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\frames.js:1000:29
+    at async ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\frameDispatcher.js:149:12)
+    at async DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-9518679556762929712\package\lib\server\dispatchers\dispatcher.js:312:22)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
@@ -268,21 +273,14 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
           <div class="suite-RegressionAndSmoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.thesis.tests.Discount</span>
+              <span class="class-name">com.qa.thesis.tests.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateDiscount1">
-                  </a> <!-- CreateDiscount1 -->
-                  <span class="method-name">CreateDiscount1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="DeleteDiscount2">
-                  </a> <!-- DeleteDiscount2 -->
-                  <span class="method-name">DeleteDiscount2</span>
+                  <a name="invalidLogin">
+                  </a> <!-- invalidLogin -->
+                  <span class="method-name">invalidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -305,6 +303,43 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
                   <a name="DeleteDiscountPlan">
                   </a> <!-- DeleteDiscountPlan -->
                   <span class="method-name">DeleteDiscountPlan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionAndSmoke-class-passed -->
+          <div class="suite-RegressionAndSmoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.thesis.tests.HoldType</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateHoldType">
+                  </a> <!-- CreateHoldType -->
+                  <span class="method-name">CreateHoldType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeletHoldType">
+                  </a> <!-- DeletHoldType -->
+                  <span class="method-name">DeletHoldType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionAndSmoke-class-passed -->
+          <div class="suite-RegressionAndSmoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.thesis.tests.Discount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateDiscount1">
+                  </a> <!-- CreateDiscount1 -->
+                  <span class="method-name">CreateDiscount1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -344,26 +379,11 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
                   <span class="method-name">CreateHighSchool</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionAndSmoke-class-passed -->
-          <div class="suite-RegressionAndSmoke-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.thesis.tests.HoldType</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateHoldType">
-                  </a> <!-- CreateHoldType -->
-                  <span class="method-name">CreateHoldType</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="DeletHoldType">
-                  </a> <!-- DeletHoldType -->
-                  <span class="method-name">DeletHoldType</span>
+                  <a name="DeleteHighSchool">
+                  </a> <!-- DeleteHighSchool -->
+                  <span class="method-name">DeleteHighSchool</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -402,12 +422,16 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
         &lt;include name=&quot;smoke&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.qa.thesis.tests&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.thesis.tests.College&quot;/&gt;
-      &lt;class name=&quot;com.qa.thesis.tests.DiscountPlan&quot;/&gt;
       &lt;class name=&quot;com.qa.thesis.tests.Discount&quot;/&gt;
+      &lt;class name=&quot;com.qa.thesis.tests.DiscountPlan&quot;/&gt;
       &lt;class name=&quot;com.qa.thesis.tests.HighSchool&quot;/&gt;
       &lt;class name=&quot;com.qa.thesis.tests.HoldType&quot;/&gt;
+      &lt;class name=&quot;com.qa.thesis.tests.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- smoke --&gt;
 &lt;/suite&gt; &lt;!-- RegressionAndSmoke --&gt;
@@ -424,7 +448,7 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
                 <span class="test-name">regression (5 classes)</span>
               </li>
               <li>
-                <span class="test-name">smoke (5 classes)</span>
+                <span class="test-name">smoke (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -481,6 +505,10 @@ waiting for locator(&quot;#searchResults div&quot;).filter(new Locator.FilterOpt
                 <span class="method-in-group-name">DeleteDiscountPlan</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -498,47 +526,51 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CreateCollege')
 data.setCell(0, 2, 'com.qa.thesis.tests.College')
-data.setCell(0, 3, 23974);
+data.setCell(0, 3, 14008);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'DeleteDiscountPlan')
-data.setCell(1, 2, 'com.qa.thesis.tests.DiscountPlan')
-data.setCell(1, 3, 12691);
+data.setCell(1, 1, 'CreateDiscount1')
+data.setCell(1, 2, 'com.qa.thesis.tests.Discount')
+data.setCell(1, 3, 13105);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'DeleteCollege')
 data.setCell(2, 2, 'com.qa.thesis.tests.College')
-data.setCell(2, 3, 11003);
+data.setCell(2, 3, 7530);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CreateDiscountPlan')
-data.setCell(3, 2, 'com.qa.thesis.tests.DiscountPlan')
-data.setCell(3, 3, 10085);
+data.setCell(3, 1, 'CreateHighSchool')
+data.setCell(3, 2, 'com.qa.thesis.tests.HighSchool')
+data.setCell(3, 3, 5830);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'CreateHoldType')
 data.setCell(4, 2, 'com.qa.thesis.tests.HoldType')
-data.setCell(4, 3, 9034);
+data.setCell(4, 3, 5353);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DeleteDiscount2')
-data.setCell(5, 2, 'com.qa.thesis.tests.Discount')
-data.setCell(5, 3, 8932);
+data.setCell(5, 1, 'CreateDiscountPlan')
+data.setCell(5, 2, 'com.qa.thesis.tests.DiscountPlan')
+data.setCell(5, 3, 5188);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'CreateHighSchool')
+data.setCell(6, 1, 'DeleteHighSchool')
 data.setCell(6, 2, 'com.qa.thesis.tests.HighSchool')
-data.setCell(6, 3, 8122);
+data.setCell(6, 3, 4459);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'DeletHoldType')
 data.setCell(7, 2, 'com.qa.thesis.tests.HoldType')
-data.setCell(7, 3, 6932);
+data.setCell(7, 3, 4030);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'CreateDiscount1')
-data.setCell(8, 2, 'com.qa.thesis.tests.Discount')
-data.setCell(8, 3, 5876);
+data.setCell(8, 1, 'DeleteDiscountPlan')
+data.setCell(8, 2, 'com.qa.thesis.tests.DiscountPlan')
+data.setCell(8, 3, 3889);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'DeleteHighSchool')
-data.setCell(9, 2, 'com.qa.thesis.tests.HighSchool')
-data.setCell(9, 3, 3650);
+data.setCell(9, 1, 'DeleteDiscount2')
+data.setCell(9, 2, 'com.qa.thesis.tests.Discount')
+data.setCell(9, 3, 3145);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidLogin')
+data.setCell(10, 2, 'com.qa.thesis.tests.Login')
+data.setCell(10, 3, 783);
 window.suiteTableData['RegressionAndSmoke']= { tableData: data, tableDiv: 'times-div-RegressionAndSmoke'}
 return data;
 }
@@ -558,21 +590,62 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionAndSmoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">22 ignored methods</span>
+            <span class="header-content">25 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.thesis.tests.Discount</span>
+              <span class="ignored-class-name">com.qa.thesis.tests.Login</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">CreateDiscount1</span>
+                <span class="ignored-method-name">validLogin</span>
                 <br/>
                 <span class="ignored-method-name">teardown</span>
                 <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.thesis.tests.DiscountPlan</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">DeleteDiscountPlan</span>
+                <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">CreateDiscountPlan</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.thesis.tests.HoldType</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">DeletHoldType</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">CreateHoldType</span>
+                <br/>
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.thesis.tests.Discount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">CreateDiscount1</span>
+                <br/>
                 <span class="ignored-method-name">DeleteDiscount2</span>
+                <br/>
+                <span class="ignored-method-name">teardown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -586,47 +659,17 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.thesis.tests.DiscountPlan</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">DeleteDiscountPlan</span>
-                <br/>
-                <span class="ignored-method-name">teardown</span>
-                <br/>
-                <span class="ignored-method-name">CreateDiscountPlan</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.qa.thesis.tests.HighSchool</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">DeleteHighSchool</span>
+                <span class="ignored-method-name">setup</span>
                 <br/>
                 <span class="ignored-method-name">CreateHighSchool</span>
                 <br/>
-                <span class="ignored-method-name">teardown</span>
-                <br/>
                 <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.thesis.tests.HoldType</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">DeletHoldType</span>
                 <br/>
                 <span class="ignored-method-name">teardown</span>
                 <br/>
-                <span class="ignored-method-name">CreateHoldType</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
+                <span class="ignored-method-name">DeleteHighSchool</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -645,144 +688,154 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setup(Chromium, https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.thesis.tests.DiscountPlan</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">CreateDiscountPlan</span>
-                <span class="method-start">10244 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.thesis.tests.College</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateCollege</span>
-                <span class="method-start">10541 ms</span>
+                <span class="method-start">15106 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.thesis.tests.DiscountPlan</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">Logout</span>
-                <span class="method-start">20425 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">DeleteDiscountPlan</span>
-                <span class="method-start">22291 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.thesis.tests.College</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">Logout</span>
-                <span class="method-start">34522 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.thesis.tests.DiscountPlan</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">Logout</span>
-                <span class="method-start">34987 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.Discount</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateDiscount1</span>
-                <span class="method-start">37716 ms</span>
+                <span class="method-start">15173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">28372 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.thesis.tests.College</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">29124 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.thesis.tests.Discount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteDiscount2</span>
+                <span class="method-start">31198 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.College</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DeleteCollege</span>
-                <span class="method-start">39392 ms</span>
+                <span class="method-start">34001 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.Discount</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">43595 ms</span>
+                <span class="method-start">34376 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.thesis.tests.DiscountPlan</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">DeleteDiscount2</span>
-                <span class="method-start">45963 ms</span>
+                <span class="method-name">CreateDiscountPlan</span>
+                <span class="method-start">35923 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">41115 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.College</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">50399 ms</span>
+                <span class="method-start">41571 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.thesis.tests.DiscountPlan</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DeleteDiscountPlan</span>
+                <span class="method-start">43219 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.HighSchool</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateHighSchool</span>
-                <span class="method-start">53244 ms</span>
+                <span class="method-start">44136 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.thesis.tests.Discount</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.thesis.tests.DiscountPlan</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">54903 ms</span>
+                <span class="method-start">47115 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.HoldType</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateHoldType</span>
-                <span class="method-start">57293 ms</span>
+                <span class="method-start">49711 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.HighSchool</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">61370 ms</span>
+                <span class="method-start">49970 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">DeleteHighSchool</span>
-                <span class="method-start">64221 ms</span>
+                <span class="method-start">52964 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.HoldType</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">66333 ms</span>
+                <span class="method-start">55072 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.HighSchool</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">67883 ms</span>
+                <span class="method-start">57427 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.HoldType</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DeletHoldType</span>
-                <span class="method-start">68642 ms</span>
+                <span class="method-start">57581 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">75578 ms</span>
+                <span class="method-start">61615 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.thesis.tests.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin</span>
+                <span class="method-start">64005 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Logout</span>
+                <span class="method-start">64792 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.thesis.tests.College</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">77272 ms</span>
+                <span class="method-start">94805 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
