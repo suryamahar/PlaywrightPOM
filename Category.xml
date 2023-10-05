@@ -20,7 +20,7 @@
     </classes>
   </test>
   <test name="smoke">
-	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
 	  <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <groups>
       <run>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+  <test  name="Test" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://vmrda01smwebd10.lab.dev.thesiscloudrd.com/u4sm "></parameter>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable"/>
+    </classes>
+  </test>
+    <test  name="Test1" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://vmrda02smwebd10.lab.dev.thesiscloudrd.com/u4sm "></parameter>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable"/>
+    </classes>
+  </test>  <test  name="Test2" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://vmrda03smwebd10.lab.dev.thesiscloudrd.com/u4sm "></parameter>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable"/>
+    </classes>
+  </test>  <test  name="Test3" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://vmrda04smwebd10.lab.dev.thesiscloudrd.com/u4sm "></parameter>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable"/>
+    </classes>
+  </test>
+ <test  name="Test4" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://sm-qa-d46.thesiscloud-lab.com/U4SM/"></parameter>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable"/>
+    </classes>
+  </test>
+   <test  name="Test5" >
+	  <parameter name="browser" value="Chromium"></parameter>
+	  <parameter name="url" value="https://vmrda05smwebd10.lab.dev.thesiscloudrd.com/u4sm "></parameter>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

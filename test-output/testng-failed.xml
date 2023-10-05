@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [RegressionAndSmoke]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="smoke(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
     <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://vmrdex5smwebd10.lab.dev.thesiscloudrd.com/U4SM/"/>
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
+    <parameter name="url" value="https://vmrda04smwebd10.lab.dev.thesiscloudrd.com/u4sm "/>
     <classes>
-      <class name="com.qa.thesis.tests.Discount">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
         <methods>
-          <include name="DeleteDiscount2"/>
           <include name="Logout"/>
           <include name="teardown"/>
+          <include name="SetDropCharge"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.thesis.tests.Discount -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
     </classes>
-  </test> <!-- smoke(failed) -->
-</suite> <!-- Failed suite [RegressionAndSmoke] -->
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test5(failed)">
+    <parameter name="browser" value="Chromium"/>
+    <parameter name="url" value="https://vmrda05smwebd10.lab.dev.thesiscloudrd.com/u4sm "/>
+    <classes>
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <methods>
+          <include name="Logout"/>
+          <include name="teardown"/>
+          <include name="SetDropCharge"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+</suite> <!-- Failed suite [Suite] -->

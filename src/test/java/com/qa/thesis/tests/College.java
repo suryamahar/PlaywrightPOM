@@ -26,7 +26,6 @@ public class College extends BaseTest{
 		loginpage.clickAgree();
 		loginpage.NavigateToCollege();
 		loginpage.DeleteCollege("College1");
-
 	} 
 
 }

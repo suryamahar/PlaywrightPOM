@@ -173,4 +173,21 @@ public class LoginPage {
 	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("OK")).click();
 	      return this;
 	}
+	public LoginPage NavigateToApplicationSetting()
+	{
+	     page.click("//button[@title='System Management']");
+	     page.click("//a[text()='Application Settings']");
+	     return this;
+	}
+	public LoginPage GoToModule()
+	{
+	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Module")).click();
+	     return this;
+	}
+	public LoginPage SetDropCharges(String charge)
+	{
+	      page.locator("#s2id_autogen10").click();
+	      page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(charge)).click();
+	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save")).click();	     return this;
+	}
 }

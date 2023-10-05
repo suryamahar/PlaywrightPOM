@@ -41,7 +41,7 @@ public class PlaywrightFactory {
 	}
 
 	public static Page initBrowser(String browserName, String url) {
-		System.out.println("Broser name is" + browserName);
+		System.out.println("Broser name is " + browserName);
 
 		tlPlaywright.set(Playwright.create());
 

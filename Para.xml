@@ -6,7 +6,7 @@
 	</listeners>
   <test  name="Test1" >
 	  <parameter name="browser" value="Chromium"></parameter>
-	  <parameter name="url" value="https://vmrdex2smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
+	  <parameter name="url" value="https://sm-qa-com.thesiscloud-lab.com/U4SM/"></parameter>
     <classes>
     <class name="com.qa.thesis.tests.College"/>
      <class name="com.qa.thesis.tests.Discount"/>
@@ -15,7 +15,7 @@
     
     <test  name="Test2" >
 	  <parameter name="browser" value="chrome"></parameter>
-	  <parameter name="url" value="https://vmrdex3smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
+	  <parameter name="url" value="https://sm-qa-c27.thesiscloud-lab.com/U4SM/"></parameter>
     <classes>
     <class name="com.qa.thesis.tests.DiscountPlan"/>
     <class name="com.qa.thesis.tests.HighSchool"/>
@@ -24,7 +24,7 @@
      
        <test  name="Test3" >
 	  <parameter name="browser" value="Firefox"></parameter>
-	  <parameter name="url" value="https://vmrdex4smwebd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
+	  <parameter name="url" value="https://sm-qa-com.thesiscloud-lab.com/U4SM/"></parameter>
     <classes>
     <class name="com.qa.thesis.tests.HoldType"/>
     </classes>
