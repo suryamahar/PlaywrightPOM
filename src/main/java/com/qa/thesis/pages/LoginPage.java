@@ -190,4 +190,27 @@ public class LoginPage {
 	      page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(charge)).click();
 	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save")).click();	     return this;
 	}
+	public LoginPage NavigateToCourseOffering()
+	{
+	     page.click("(//button[@title='Academics'])[2]");
+	     page.click("//a[text()='Course Offering']");
+	     return this;
+	}
+	public LoginPage CreateCourseOffering(String course,String year)
+	{
+	      page.locator("#pageContent").getByRole(AriaRole.BUTTON).nth(1).click();
+		  page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Copy from Course Template")).click();
+	      page.locator("#adv_Slideup_Search #CourseID").click();
+	      page.locator("#adv_Slideup_Search #CourseID").fill(course);
+	      page.locator("#adv_Slideup_Search").getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName("Search")).click();
+	      page.getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName(course)).first().click();
+	      page.locator("#AcademicPeriodAcademicPeriodID_shadow").click();
+	      page.locator("#AcademicPeriodAcademicPeriodID_shadow").fill(year);
+	      page.getByRole(AriaRole.LISTITEM, new Page.GetByRoleOptions().setName(year)).first().click();
+	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("OK")).click();
+	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save")).click();
+	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Show Search Results Widget")).click();
+	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Back to Search")).click();
+	     return this;
+	}
 }
