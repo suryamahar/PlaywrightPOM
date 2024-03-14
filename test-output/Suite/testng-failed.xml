@@ -1,88 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test4(failed)">
-    <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://sm-qa-d46.thesiscloud-lab.com/U4SM/"/>
-    <classes>
-      <class name="com.qa.thesis.tests.SetEnvVariable">
-        <methods>
-          <include name="Logout"/>
-          <include name="teardown"/>
-          <include name="SetDropCharge"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
-    </classes>
-  </test> <!-- Test4(failed) -->
-  <test thread-count="5" parallel="tests" name="Test3(failed)">
+  <test thread-count="5" parallel="tests" name="A03(failed)">
     <parameter name="browser" value="Chromium"/>
     <parameter name="url" value="https://vmrda04smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"/>
     <classes>
-      <class name="com.qa.thesis.tests.SetEnvVariable">
+      <class name="com.qa.thesis.tests.DataCreation">
         <methods>
           <include name="Logout"/>
           <include name="teardown"/>
-          <include name="SetDropCharge"/>
+          <include name="dataCreation"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+      </class> <!-- com.qa.thesis.tests.DataCreation -->
     </classes>
-  </test> <!-- Test3(failed) -->
-  <test thread-count="5" parallel="tests" name="Test(failed)">
-    <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://vmrda01smdbsd10.lab.dev.thesiscloudrd.com/U4SM/ "/>
-    <classes>
-      <class name="com.qa.thesis.tests.SetEnvVariable">
-        <methods>
-          <include name="Logout"/>
-          <include name="teardown"/>
-          <include name="SetDropCharge"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
-    </classes>
-  </test> <!-- Test(failed) -->
-  <test thread-count="5" parallel="tests" name="Test2(failed)">
-    <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://vmrda03smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"/>
-    <classes>
-      <class name="com.qa.thesis.tests.SetEnvVariable">
-        <methods>
-          <include name="Logout"/>
-          <include name="teardown"/>
-          <include name="SetDropCharge"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-  <test thread-count="5" parallel="tests" name="Test1(failed)">
-    <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://vmrda02smdbsd10.lab.dev.thesiscloudrd.com/U4SM/ "/>
-    <classes>
-      <class name="com.qa.thesis.tests.SetEnvVariable">
-        <methods>
-          <include name="Logout"/>
-          <include name="teardown"/>
-          <include name="SetDropCharge"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-  <test thread-count="5" parallel="tests" name="Test5(failed)">
-    <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://vmrda05smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"/>
-    <classes>
-      <class name="com.qa.thesis.tests.SetEnvVariable">
-        <methods>
-          <include name="Logout"/>
-          <include name="teardown"/>
-          <include name="SetDropCharge"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
-    </classes>
-  </test> <!-- Test5(failed) -->
+  </test> <!-- A03(failed) -->
 </suite> <!-- Failed suite [Suite] -->

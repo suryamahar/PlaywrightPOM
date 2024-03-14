@@ -175,6 +175,8 @@ public class LoginPage {
 	}
 	public LoginPage NavigateToApplicationSetting()
 	{
+		page.waitForLoadState();
+
 	     page.click("//button[@title='System Management']");
 	     page.click("//a[text()='Application Settings']");
 	     return this;
@@ -186,7 +188,11 @@ public class LoginPage {
 	}
 	public LoginPage SetDropCharges(String charge)
 	{
-	      page.locator("#s2id_autogen10").click();
+		if( page.locator(".select2-search-choice a").isVisible()) {
+			 page.locator(".select2-search-choice a").click();
+		}
+		page.waitForLoadState();
+	      page.locator("#s2id_DropChargeRelevantStatus input").click();
 	      page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(charge)).click();
 	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save")).click();	     return this;
 	}
@@ -204,7 +210,7 @@ public class LoginPage {
 	      page.locator("#adv_Slideup_Search #CourseID").fill(course);
 	      page.locator("#adv_Slideup_Search").getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName("Search")).click();
 	      page.getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName(course)).first().click();
-	      page.locator("#AcademicPeriodAcademicPeriodID_shadow").click();
+	      page.click("#AcademicPeriodAcademicPeriodID_shadow");
 	      page.locator("#AcademicPeriodAcademicPeriodID_shadow").fill(year);
 	      page.getByRole(AriaRole.LISTITEM, new Page.GetByRoleOptions().setName(year)).first().click();
 	      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("OK")).click();
