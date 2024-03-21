@@ -21,6 +21,7 @@
     				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>./setAppSetting.xml</suiteXmlFile>
+						<suiteXmlFile>./DataCreation.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 </plugin>

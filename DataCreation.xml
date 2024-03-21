@@ -17,30 +17,30 @@
     </classes>
   </test> -->
  
-   <test  name="A03" >
+  <!-- <test  name="A03" >
 	  <parameter name="browser" value="Chromium"></parameter>
-	  <parameter name="url" value="https://vmrda01smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
+	  <parameter name="url" value="https://vmrda02smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>
       <class name="com.qa.thesis.tests.DataCreation"/>
     </classes>
   </test>  
-
-<!-- <test  name="A04" >
+-->
+ <test  name="A04" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrda04smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>
       <class name="com.qa.thesis.tests.DataCreation"/>
     </classes>
-  </test>
+  </test>-->
    
- <test  name="D46" >
+ <!--  <test  name="D46" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://sm-qa-d46.thesiscloud-lab.com/U4SM/"></parameter>
     <classes>
       <class name="com.qa.thesis.tests.DataCreation"/>
     </classes>
   </test>
-   <test  name="A05" >
+ <test  name="A05" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrda05smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
     <classes>

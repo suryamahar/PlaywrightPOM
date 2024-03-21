@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="A03(failed)">
+<suite thread-count="6" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" parallel="tests" name="D46(failed)">
     <parameter name="browser" value="Chromium"/>
-    <parameter name="url" value="https://vmrda04smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"/>
+    <parameter name="url" value="https://sm-qa-d46.thesiscloud-lab.com/U4SM/"/>
     <classes>
-      <class name="com.qa.thesis.tests.DataCreation">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
         <methods>
           <include name="Logout"/>
           <include name="teardown"/>
-          <include name="dataCreation"/>
+          <include name="SetDropCharge"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.thesis.tests.DataCreation -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
     </classes>
-  </test> <!-- A03(failed) -->
+  </test> <!-- D46(failed) -->
 </suite> <!-- Failed suite [Suite] -->
