@@ -1,13 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-29T12:41:21 IST" name="Suite" finished-at="2024-03-29T12:41:57 IST" duration-ms="36357">
+  <suite started-at="2024-06-27T20:42:48 IST" name="Suite" finished-at="2024-06-27T20:48:08 IST" duration-ms="319616">
     <groups>
     </groups>
-    <test started-at="2024-03-29T12:41:21 IST" name="D46" finished-at="2024-03-29T12:41:57 IST" duration-ms="36357">
-      <class name="com.qa.thesis.tests.DataCreation">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.DataCreation@6f7923a5]" started-at="2024-03-29T12:41:21 IST" name="setup" finished-at="2024-03-29T12:41:57 IST" duration-ms="36177" status="FAIL">
+    <test started-at="2024-06-27T20:42:48 IST" name="A05" finished-at="2024-06-27T20:45:24 IST" duration-ms="155773">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@68702e03]" started-at="2024-06-27T20:42:49 IST" name="setup" finished-at="2024-06-27T20:43:29 IST" duration-ms="40884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://vmrda05smdbsd10.lab.dev.thesiscloudrd.com/U4SM/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SetDropCharge()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@68702e03]" started-at="2024-06-27T20:43:29 IST" name="SetDropCharge" finished-at="2024-06-27T20:44:45 IST" duration-ms="75343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDropCharge -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@68702e03]" started-at="2024-06-27T20:44:45 IST" name="Logout" finished-at="2024-06-27T20:45:16 IST" duration-ms="31658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@68702e03]" started-at="2024-06-27T20:45:16 IST" name="teardown" finished-at="2024-06-27T20:45:24 IST" duration-ms="7855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+    </test> <!-- A05 -->
+    <test started-at="2024-06-27T20:42:48 IST" name="A02" finished-at="2024-06-27T20:45:31 IST" duration-ms="162953">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6c4980d3]" started-at="2024-06-27T20:42:49 IST" name="setup" finished-at="2024-06-27T20:43:30 IST" duration-ms="41991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://vmrda02smdbsd10.lab.dev.thesiscloudrd.com/U4SM/ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SetDropCharge()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6c4980d3]" started-at="2024-06-27T20:43:30 IST" name="SetDropCharge" finished-at="2024-06-27T20:44:16 IST" duration-ms="45136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDropCharge -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6c4980d3]" started-at="2024-06-27T20:44:16 IST" name="Logout" finished-at="2024-06-27T20:44:50 IST" duration-ms="33828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6c4980d3]" started-at="2024-06-27T20:44:50 IST" name="teardown" finished-at="2024-06-27T20:45:31 IST" duration-ms="41693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+    </test> <!-- A02 -->
+    <test started-at="2024-06-27T20:42:48 IST" name="D46" finished-at="2024-06-27T20:45:41 IST" duration-ms="172512">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@479460a6]" started-at="2024-06-27T20:42:49 IST" name="setup" finished-at="2024-06-27T20:43:33 IST" duration-ms="44410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,196 +84,118 @@
               </value>
             </param>
           </params>
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\dispatcher.js:312:46)
-}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:853)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:853)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-at com.microsoft.playwright.Page.navigate(Page.java:5264)
-at com.qa.thesis.factory.PlaywrightFactory.initBrowser(PlaywrightFactory.java:88)
-at com.qa.thesis.base.BaseTest.setup(BaseTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dataCreation()[pri:0, instance:com.qa.thesis.tests.DataCreation@6f7923a5]" started-at="2024-03-29T12:41:57 IST" name="dataCreation" finished-at="2024-03-29T12:41:57 IST" duration-ms="0" status="SKIP">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\dispatcher.js:312:46)
-}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:853)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:853)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-at com.microsoft.playwright.Page.navigate(Page.java:5264)
-at com.qa.thesis.factory.PlaywrightFactory.initBrowser(PlaywrightFactory.java:88)
-at com.qa.thesis.base.BaseTest.setup(BaseTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://sm-qa-d46.thesiscloud-lab.com/U4SM/", waiting until "load"
-============================================================
-    at ProgressController.run (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\SURYA~1.MAH\AppData\Local\Temp\playwright-java-11246061853780868050\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+        <test-method signature="SetDropCharge()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@479460a6]" started-at="2024-06-27T20:43:33 IST" name="SetDropCharge" finished-at="2024-06-27T20:44:44 IST" duration-ms="71209" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataCreation -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.DataCreation@6f7923a5]" started-at="2024-03-29T12:41:57 IST" name="Logout" finished-at="2024-03-29T12:41:57 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- SetDropCharge -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@479460a6]" started-at="2024-06-27T20:44:44 IST" name="Logout" finished-at="2024-06-27T20:45:18 IST" duration-ms="34267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.DataCreation@6f7923a5]" started-at="2024-03-29T12:41:57 IST" name="teardown" finished-at="2024-03-29T12:41:57 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@479460a6]" started-at="2024-06-27T20:45:18 IST" name="teardown" finished-at="2024-06-27T20:45:41 IST" duration-ms="22593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.qa.thesis.tests.DataCreation -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
     </test> <!-- D46 -->
+    <test started-at="2024-06-27T20:42:48 IST" name="A03" finished-at="2024-06-27T20:45:41 IST" duration-ms="172903">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@74bf1791]" started-at="2024-06-27T20:42:49 IST" name="setup" finished-at="2024-06-27T20:43:30 IST" duration-ms="41562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://vmrda03smdbsd10.lab.dev.thesiscloudrd.com/U4SM/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SetDropCharge()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@74bf1791]" started-at="2024-06-27T20:43:30 IST" name="SetDropCharge" finished-at="2024-06-27T20:44:43 IST" duration-ms="72632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDropCharge -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@74bf1791]" started-at="2024-06-27T20:44:43 IST" name="Logout" finished-at="2024-06-27T20:45:08 IST" duration-ms="25659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@74bf1791]" started-at="2024-06-27T20:45:08 IST" name="teardown" finished-at="2024-06-27T20:45:41 IST" duration-ms="32936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+    </test> <!-- A03 -->
+    <test started-at="2024-06-27T20:42:48 IST" name="A01" finished-at="2024-06-27T20:45:55 IST" duration-ms="186506">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6f7923a5]" started-at="2024-06-27T20:42:49 IST" name="setup" finished-at="2024-06-27T20:43:29 IST" duration-ms="40509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://vmrda01smdbsd10.lab.dev.thesiscloudrd.com/U4SM/ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SetDropCharge()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6f7923a5]" started-at="2024-06-27T20:43:29 IST" name="SetDropCharge" finished-at="2024-06-27T20:44:52 IST" duration-ms="82764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDropCharge -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6f7923a5]" started-at="2024-06-27T20:44:52 IST" name="Logout" finished-at="2024-06-27T20:45:21 IST" duration-ms="28946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@6f7923a5]" started-at="2024-06-27T20:45:21 IST" name="teardown" finished-at="2024-06-27T20:45:55 IST" duration-ms="34123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+    </test> <!-- A01 -->
+    <test started-at="2024-06-27T20:42:48 IST" name="A04" finished-at="2024-06-27T20:48:08 IST" duration-ms="319607">
+      <class name="com.qa.thesis.tests.SetEnvVariable">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@49c66ade]" started-at="2024-06-27T20:42:49 IST" name="setup" finished-at="2024-06-27T20:46:33 IST" duration-ms="224183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chromium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://vmrda04smdbsd10.lab.dev.thesiscloudrd.com/U4SM/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SetDropCharge()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@49c66ade]" started-at="2024-06-27T20:46:33 IST" name="SetDropCharge" finished-at="2024-06-27T20:47:46 IST" duration-ms="73437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDropCharge -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@49c66ade]" started-at="2024-06-27T20:47:46 IST" name="Logout" finished-at="2024-06-27T20:48:04 IST" duration-ms="18053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.thesis.tests.SetEnvVariable@49c66ade]" started-at="2024-06-27T20:48:04 IST" name="teardown" finished-at="2024-06-27T20:48:08 IST" duration-ms="3844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.thesis.tests.SetEnvVariable -->
+    </test> <!-- A04 -->
   </suite> <!-- Suite -->
 </testng-results>

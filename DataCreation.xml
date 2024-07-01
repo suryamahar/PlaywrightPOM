@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="5" parallel="tests">
+<suite name="Suite" thread-count="6" parallel="tests">
 
- <test  name="A01" >
+<test  name="A01" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrda01smdbsd10.lab.dev.thesiscloudrd.com/U4SM/ "></parameter>
     <classes>
       <class name="com.qa.thesis.tests.DataCreation"/>
     </classes>
   </test>
-   <test  name="A02" >
+  <test  name="A02" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrda02smdbsd10.lab.dev.thesiscloudrd.com/U4SM/ "></parameter>
     <classes>
@@ -24,7 +24,7 @@
       <class name="com.qa.thesis.tests.DataCreation"/>
     </classes>
   </test> 
-
+  
  <test  name="A04" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://vmrda04smdbsd10.lab.dev.thesiscloudrd.com/U4SM/"></parameter>
@@ -32,7 +32,7 @@
       <class name="com.qa.thesis.tests.DataCreation"/>
     </classes>
   </test>
-   
+
 <test  name="D46" >
 	  <parameter name="browser" value="Chromium"></parameter>
 	  <parameter name="url" value="https://sm-qa-d46.thesiscloud-lab.com/U4SM/"></parameter>
